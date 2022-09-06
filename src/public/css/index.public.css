@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../assets/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.formulario {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.chat {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  gap: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.messages {
+  width: 100%;
+  height: 50%;
+  color: wheat;
+  font-style: italic;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.infoUser {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0.5rem;
+}
+
+.messageChat {
+  margin-bottom: 0.8rem;
+}
+
+.email,
+.date,
+.message {
+  font-family: monospace;
+  font-size: 12px;
+}
+.email {
+  color: rgb(99, 99, 202);
+  font-style: normal;
+}
+.date {
+  font-style: normal;
+  color: chocolate;
+}
+
+.welcomeMessagecontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.welcomeMessageChat {
+  color: wheat;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.messageText {
+  color: wheat;
+  font-size: 14px;
+  padding: 0.2rem 0;
+}
+
+.emailUser {
+  background: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: solid white 1px;
+  color: white;
+  caret-color: aliceblue;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+.messageUser {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid white 1px;
+  width: 100%;
+  color: white;
+  caret-color: aliceblue;
+  font-family: monospace;
+  padding-bottom: 0.3rem;
+}
+
+.alert {
+  border-color: red;
+}
+
+.btnSendMessage {
+  width: 4rem;
+  font-family: monospace;
+  padding: 0.3rem 0;
+  margin-top: 1rem;
+  border-radius: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form > input {
+  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+
+.labelFileBtn {
+  background-color: #f7eddb;
+  color: black;
+  margin: 0.8rem 0 1.5rem 0;
+  padding: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.buttonsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.buttonsDiv > button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.go-back-btn {
+  background-color: indianred;
+  padding: 0.5rem;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}
+
+.productsContainer {
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+}
+.table {
+  width: 100%;
+  display: table;
+}
+.table-title {
+  display: table-caption;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7eddb;
+  margin-bottom: 1rem;
+}
+.table-header-row {
+  display: table-header-group;
+  background-color: rgba(240, 122, 122, 0.36);
+  backdrop-filter: blur(2px);
+  font-weight: bold;
+  font-size: 17px;
+}
+.table-header-cells {
+  width: 25%;
+  display: table-cell;
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: solid 1px wheat;
+  color: wheat;
+}
+.table-body {
+  display: table-row-group;
+  background-color: rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(2px);
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: solid 1px wheat;
+  color: wheat;
+}
+.table-cell-image {
+  display: table-cell;
+  padding: 1rem;
+  border-bottom: solid 1px wheat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.img-product {
+  width: 20%;
+}
+.table-row-empty-message,
+.errorContainer {
+  width: 20%;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: wheat;
+  background-color: rgb(143, 61, 61);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .chat {
+    width: 30%;
+  }
+  .infoUser {
+    width: 90%;
+  }
+  .emailUser {
+    width: 100%;
+  }
+  .messageUser {
+    width: 100%;
+  }
+  .messages {
+    overflow-x: hidden;
+  }
+}

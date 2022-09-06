@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.public.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <section class="formulario">
+      <form enctype="multipart/form-data" id="form">
+        <input
+          type="text"
+          placeholder="ingrese id del producto"
+          name="id"
+          id="productId"
+        />
+        <input
+          type="text"
+          placeholder="Ingrese su producto"
+          name="title"
+          id="product"
+        />
+        <input
+          type="text"
+          placeholder="Ingrese el precio"
+          name="price"
+          id="price"
+        />
+        <input type="file" name="image" id="image" hidden id="image" />
+        <label for="image" class="labelFileBtn">Choose File</label>
+        <div class="buttonsDiv">
+          <button id="postBtn">Post</button>
+          <button id="putBtn">Update</button>
+          <button id="deleteBtn">Delete</button>
+        </div>
+      </form>
+
+      <div class="chat">
+        <div class="messages" id="messages">
+          <div class="welcomeMessagecontainer">
+            <p class="welcomeMessageChat">Aqui inicia el chat</p>
+          </div>
+        </div>
+        <div class="infoUser">
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="emailUser"
+            id="emailUser"
+          />
+          <input
+            type="text"
+            placeholder="Your message"
+            class="messageUser"
+            id="messageUser"
+          />
+
+          <button class="btnSendMessage" id="btnSendChatMessage">Send</button>
+        </div>
+      </div>
+    </section>
+    <div id="errorContainer" class="hidden"></div>
+    <section id="productsContainer" class="productsContainer"></section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.public.js" type="module"></script>
+  </body>
+</html>
