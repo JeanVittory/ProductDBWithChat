@@ -1,4 +1,4 @@
-# Installation
+## ABOUT
 
 This is a project to store products with name, price an a image uploaded from your machine. The application works at real-time way where the users can add, remove or update the products and it will be automatically show the changes to the other users connected.
 At the same time i build a chat where the users can talk and interact between.
@@ -12,6 +12,8 @@ At the same time i build a chat where the users can talk and interact between.
 - [MySQL2 v.2.3](https://github.com/sidorares/node-mysql2#readme)
 - [Socket.io v4.5](https://socket.io/)
 - [SQLite3 v5.0](https://www.sqlite.org/index.html)
+
+## INSTALLATION
 
 ```sh
 git clone https://github.com/JeanVittory/ProductDBWithChat
